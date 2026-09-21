@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--timestamp=1757809450-->
+<!--timestamp=1790025384-->
 
 <head>
   <meta charset="UTF-8">
@@ -17,20 +17,20 @@
   <link rel="icon" href="https://released.info/assets/img/technologies/debian/debian.ico" type="image/svg+xml">
   <meta name="description" content="Is Linux Debian 14 Released?">
   <meta name="keywords" content="Linux, Debian, release, date, when, os, operating, system">
-  <meta name=”robots” content="index, follow">
+  <meta name="robots" content="index, follow">
 
   <!-- facebook -->
   <meta property="og:url" content="https://is.debian.released.info" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Is Linux Debian 14 Released?" />
-  <meta property="og:description" content="Linux Debian 14 will be released in 17 days! #released.info" />
+  <meta property="og:description" content="Linux Debian 14 is not released. Still waiting! #released.info" />
   <meta property="og:image" content="https://released.info/assets/img/technologies/debian/debian-logo.png" />
 
   <!-- twitter -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="ReleasedInfo" />
   <meta name="twitter:title" content="Is Linux Debian 14 Released?" />
-  <meta name="twitter:description" content="Linux Debian 14 will be released in 17 days! #released.info" />
+  <meta name="twitter:description" content="Linux Debian 14 is not released. Still waiting! #released.info" />
   <meta name="twitter:image" content="https://released.info/assets/img/technologies/debian/debian-logo.png" />
 
   <meta name="url" content="https://is.debian.released.info" />
@@ -47,7 +47,7 @@
 
 <body>
 
-  <input id="released-days" type="hidden" value="17" />
+  <input id="released-days" type="hidden" value="-1" />
 
   <main role="main">
     <a href="https://released.info/index.html" class="go-back"><i class="bi bi-arrow-left"></i></a>
@@ -78,7 +78,7 @@
           <div class="col-lg-8">
 
             <div id="logo">
-              <span role="img" aria-label="${configuration.logoAlt}"
+              <span role="img" aria-label="Linux Debian logo"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/debian/debian-logo.png&#39;);">
               </span>
             </div>
@@ -86,12 +86,13 @@
             <!-- CHOOSE ONE OF BELOW SECTIONS HERE -->
 
             
+            
+            <!-- A counter that reached zero falls back to "Not Yet" instead of an empty box until the state is updated -->
             <span>
-              <div class="odometer-content" id="counter">
-                <div id="odometer"></div>
+              <div class="white-box" id="not-yet">
+                Not Yet
               </div>
             </span>
-            
             
 
             <!-- END -->
@@ -101,10 +102,14 @@
         <div class="row">
           <div class="col-lg-8">
             <h3 id="highlightTextDescription1">
-              Days until Linux Debian 14 is officially released
+              Debian 14 "forky" is expected <span class="btn-primary">in 2027</span>, the freeze dates have not been announced yet
             </h3>
           </div>
-          
+          <div class="col-lg-8">
+            <h4 id="highlightTextDescription2">
+              Debian 13 "trixie" has been released on <span class="btn-primary">9th August 2025</span>, the latest point release 13.7 came out on 12th September 2026
+            </h4>
+          </div>
         </div>
         <div class="text-center">
           <a class="share-twitter" target="_blank">
@@ -118,26 +123,26 @@
     <section class="features-section">
       <div class="container-lg">
         <h2>
-          Meet Debian 14
+          Meet Debian 13
         </h2>
         <div class="row mb-5">
           <div class="col-md-5">
 
             <ul>
               <li>
-                New Support: RISC-V 64-bit
+                Official 64-bit RISC-V port
               </li>
             </ul>
 
             <ul>
               <li>
-                Installer Changes
+                Linux 6.12 LTS kernel
               </li>
             </ul>
 
             <ul>
               <li>
-                Security Enhancements
+                GNOME 48 and KDE Plasma 6.3
               </li>
             </ul>
 
@@ -145,22 +150,27 @@
           <div class="col-md-5">
             <ul>
               <li>
-                Non-Free Firmware
+                APT 3.0
               </li>
             </ul>
             <ul>
               <li>
-                Documentation and Localization
+                HTTP Boot support
+              </li>
+            </ul>
+            <ul>
+              <li>
+                Year-2038 safe 64-bit time_t
               </li>
             </ul>
           </div>
         </div>
         <div class="text-center">
-          <a target="_blank" href="https://www.debugpoint.com/2020/12/debian-12-bullseye-theme/" class="btn btn-primary btn-lg">Read more</a>
+          <a target="_blank" href="https://www.debian.org/News/2025/20250809" class="btn btn-primary btn-lg">Read more</a>
         </div>
       </div>
       <div class="logo-container">
-        <span role="img" aria-label="${configuration.logoAlt2}"
+        <span role="img" aria-label="Linux Debian logo"
           style="background-image: url(&#39;https://released.info/assets/img/technologies/debian/debian-logo2.png&#39;);">
         </span>
       </div>
@@ -177,7 +187,7 @@
             <!-- repeat below container for each image: -->
             <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
-              <span role="img" aria-label="${post.imageAlt}"
+              <span role="img" aria-label="Book: Debian GNU/Linux Bible"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/debian/book-debian-gnu-linux-bible.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/David-B-Harris/dp/0764576445?&amp;_encoding=UTF8&amp;tag=released-info-21&amp;linkCode=ur2&amp;linkId=593c753ebbf6796c8581d0e8e37f0cf2&amp;camp=1638&amp;creative=6742">
                   <span>
@@ -191,7 +201,7 @@
             <!-- repeat below container for each image: -->
             <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
-              <span role="img" aria-label="${post.imageAlt}"
+              <span role="img" aria-label="Book: Learning Debian GNU/Linux"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/debian/book-learning-debian-gnu-linux.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Bill-McCarty/dp/1565927052?&amp;_encoding=UTF8&amp;tag=released-info-21&amp;linkCode=ur2&amp;linkId=1e6de0541085c4b393f3a978dd18a9b9&amp;camp=1638&amp;creative=6742">
                   <span>
@@ -205,7 +215,7 @@
             <!-- repeat below container for each image: -->
             <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
-              <span role="img" aria-label="${post.imageAlt}"
+              <span role="img" aria-label="Book: The Debian Administrator&#39;s Handbook"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/debian/book-debian-administrators-handbook.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Rapha%25C3%25ABl-Hertzog/dp/B08C75C55C?&amp;_encoding=UTF8&amp;tag=released-info-21&amp;linkCode=ur2&amp;linkId=6b8d8472fca02e57a04d099e74a09762&amp;camp=1638&amp;creative=6742">
                   <span>
@@ -219,7 +229,7 @@
             <!-- repeat below container for each image: -->
             <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
-              <span role="img" aria-label="${post.imageAlt}"
+              <span role="img" aria-label="Book: Understanding Linux Network Internals"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/debian/book-understanding-linux-network-internals.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Christian-Benvenuti-ebook/dp/B0043EWV3S?&amp;_encoding=UTF8&amp;tag=released-info-21&amp;linkCode=ur2&amp;linkId=8054ff613b1fa0fc4725a6960ae01c3c&amp;camp=1638&amp;creative=6742">
                   <span>
@@ -233,7 +243,7 @@
             <!-- repeat below container for each image: -->
             <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
-              <span role="img" aria-label="${post.imageAlt}"
+              <span role="img" aria-label="Book: Debian 7: System Administration Best Practices "
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/debian/book-Debian-7-System-Administration-Best-Practices.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Rich-Pinkall-Pollei-ebook/dp/B00G8YAUWA?&amp;_encoding=UTF8&amp;tag=released-info-21&amp;linkCode=ur2&amp;linkId=19bbb4c976cf619df14da29a144ad371&amp;camp=1638&amp;creative=6742">
                   <span>
@@ -247,7 +257,7 @@
             <!-- repeat below container for each image: -->
             <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
-              <span role="img" aria-label="${post.imageAlt}"
+              <span role="img" aria-label="Book: Understanding the Linux Kernel"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/debian/book-understanding-the-linux-kernel.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Daniel-P-Bovet-ebook/dp/B0043D2E54?&amp;_encoding=UTF8&amp;tag=released-info-21&amp;linkCode=ur2&amp;linkId=3d4695d45e82cc7003ef009c9d487062&amp;camp=1638&amp;creative=6742">
                   <span>
@@ -334,10 +344,7 @@
         but it does take effort to add it to the repository, and other operating systems can do it better and
         faster.<br />
         <h3>Releases</h3>
-        Debian is currently on the codenamed “Buster” stable release, which is the tenth iteration of the operating
-        system.
-        The next release is already codenamed “Bullseye”, and has no set release date yet, but it is confirmed to be
-        under development and we can expect it relatively soon.
+        Debian is currently on the codenamed “trixie” stable release (Debian 13), published on 9th August 2025; the latest point release, 13.7, came out on 12th September 2026. The next release is already codenamed “forky” (Debian 14); it is in testing, has no freeze or release date yet and is expected in 2027.
     </div>
 </div>
       </div>
